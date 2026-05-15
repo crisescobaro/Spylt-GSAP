@@ -44,7 +44,7 @@ const BenefitSection = () => {
 
   return (
     <section className="benefit-section">
-      <div className="container mx-auto pt-20">
+      <div className="container mx-auto pt-20 pb-20">
         <div className="col-center">
           <p>
             Desbloquea las Ventajas: <br />
@@ -64,9 +64,7 @@ const BenefitSection = () => {
         </div>
       </div>
 
-      <div className="relative overlay-box">
-        <VideoPin />
-      </div>
+      <VideoPin />
     </section>
   );
 };

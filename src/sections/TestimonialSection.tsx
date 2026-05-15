@@ -89,6 +89,7 @@ const TestimonialSection = () => {
               playsInline
               muted
               loop
+              preload="auto"
               className="size-full object-cover"
             />
           </div>

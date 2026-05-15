@@ -22,6 +22,12 @@ export default function Home() {
   useEffect(() => {
     window.history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
+
+    const handleLoad = () => {
+      ScrollTrigger.refresh();
+    };
+    window.addEventListener("load", handleLoad);
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
 
   useGSAP(() => {
@@ -29,7 +35,11 @@ export default function Home() {
       smooth: 3,
       effects: true,
     });
-  });
+
+    if (isPreloaderDone) {
+      ScrollTrigger.refresh();
+    }
+  }, [isPreloaderDone]);
 
   return (
     <main>

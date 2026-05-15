@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Spylt",
   description: "Proteína + Cafeína - Increíblemente Delicioso",
+  icons: {
+    icon: "/images/kdl.webp",
+  },
 };
 
 export default function RootLayout({

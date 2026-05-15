@@ -18,20 +18,8 @@ const FooterSection = () => {
         {isMobile ? (
           <Image src="/images/footer-drink.webp" alt="" width={3000} height={3000} className="absolute top-0 object-contain" />
         ) : (
-          <video src="/videos/splash1.mp4" autoPlay playsInline muted className="absolute top-0 object-contain mix-blend-lighten" />
+          <video src="/videos/splash1.mp4" autoPlay playsInline muted preload="auto" className="absolute top-0 object-contain mix-blend-lighten" />
         )}
-
-        <div className="flex-center gap-5 relative z-10 md:mt-20 mt-5">
-          <div className="social-btn">
-            <Image src="./images/yt.svg" alt="" width={50} height={50} />
-          </div>
-          <div className="social-btn">
-            <Image src="./images/insta.svg" alt="" width={50} height={50} />
-          </div>
-          <div className="social-btn">
-            <Image src="./images/tiktok.svg" alt="" width={50} height={50} />
-          </div>
-        </div>
 
         <div className="mt-40 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between text-milk font-paragraph md:text-lg font-medium">
           <div className="flex items-center md:gap-16 gap-5">
