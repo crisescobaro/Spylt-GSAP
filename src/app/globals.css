@@ -67,7 +67,7 @@ body::-webkit-scrollbar {
       @apply relative z-10 w-full h-full flex flex-col 2xl:justify-center items-center translate-y-10 2xl:pt-0 md:pt-32 pt-24;
 
       .hero-title {
-        @apply text-dark-brown 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold uppercase leading-[9vw] tracking-[-.35vw] 2xl:mb-0 mb-5;
+        @apply text-dark-brown 2xl:text-[8.5rem] md:text-[6.5rem] text-5xl font-bold uppercase md:leading-[9vw] leading-tight tracking-[-.35vw] 2xl:mb-0 mb-5 text-center;
       }
 
       .hero-text-scroll {
@@ -78,7 +78,7 @@ body::-webkit-scrollbar {
         }
 
         h1 {
-          @apply uppercase 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold text-[#fce1cd] leading-[9vw] tracking-[-.35vw] 2xl:px-[1.2vw] px-3 2xl:pb-[1vw] pb-5 2xl:py-0 py-3;
+          @apply uppercase 2xl:text-[8.5rem] md:text-[6.5rem] text-4xl font-bold text-[#fce1cd] md:leading-[9vw] leading-tight tracking-[-.35vw] 2xl:px-[1.2vw] px-3 2xl:pb-[1vw] pb-3 2xl:py-0 py-2;
         }
       }
 
@@ -99,11 +99,11 @@ body::-webkit-scrollbar {
       @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex flex-col justify-center items-center md:gap-24 gap-14;
 
       h1:first-of-type {
-        @apply 2xl:max-w-4xl md:max-w-2xl max-w-xs text-center  text-[#faeade10];
+        @apply 2xl:max-w-4xl md:max-w-2xl max-w-[18rem] text-center text-[#faeade10] break-words;
       }
 
       h1:last-of-type {
-        @apply 2xl:max-w-7xl md:max-w-4xl max-w-xs text-center  text-[#faeade10];
+        @apply 2xl:max-w-7xl md:max-w-4xl max-w-[18rem] text-center text-[#faeade10] break-words;
       }
     }
 
@@ -151,7 +151,7 @@ body::-webkit-scrollbar {
         }
 
         h1 {
-          @apply absolute md:bottom-10 md:left-10 bottom-5 left-5 text-milk md:text-6xl text-3xl font-semibold uppercase tracking-tighter;
+          @apply absolute md:bottom-10 md:left-10 bottom-5 left-5 text-milk md:text-6xl text-2xl font-semibold uppercase tracking-tighter;
         }
       }
     }
@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
     @apply min-h-dvh bg-[#222123] overflow-hidden relative;
 
     p {
-      @apply text-milk font-paragraph text-center text-lg;
+      @apply text-milk font-paragraph text-center md:text-lg text-base px-4;
     }
 
     .first-title {
@@ -233,10 +233,10 @@ body::-webkit-scrollbar {
     @apply bg-milk relative w-full h-[120dvh];
 
     .pin-box {
-      @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
+      @apply flex items-center justify-center w-full md:ps-52 ps-0 absolute 2xl:bottom-32 bottom-[35vh] md:bottom-[50vh];
 
       .vd-card {
-        @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-milk;
+        @apply md:w-96 w-60 flex-none md:rounded-[2vw] rounded-2xl md:-ms-44 -ms-32 overflow-hidden 2xl:relative absolute border-[.5vw] border-milk shadow-xl;
       }
     }
 
